@@ -29,6 +29,10 @@ $mobile-width-only: 767px;
     url('../fonts/aleo-regular-webfont.woff2') format('woff');
 }
 
+* {
+  transition: all .1s ease-in;
+}
+
 body {
   position: relative;
   width: auto;
@@ -252,11 +256,16 @@ img {
   }
 }
 
-.page-main__background-wrapper-one {
-  background: url(../img/bg2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+.page-main {
+  background-color: #333333;
+
+  &__background-wrapper-one {
+
+    background: url(../img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
 }
 
 .choose {
@@ -468,7 +477,7 @@ img {
 }
 
 .reviews {
-  padding: 6.875rem 0 12.5rem 0;
+  padding: 6.875rem 0 12.4rem 0;
 
   &__title {
     margin: 0;
@@ -601,15 +610,23 @@ img {
 
   &__icon--linkedin {
     position: relative;
-    top: -8px;
+    top: -10px;
 
     width: 20px;
     height: 20px;
+
+    fill: #5474fd;
   }
 
   &__icon--youtube {
     position: relative;
+    top: -3px;
     left: 6px;
+  }
+
+  &__icon--pinterest {
+    position: relative;
+    top: -2px;
   }
 }
 

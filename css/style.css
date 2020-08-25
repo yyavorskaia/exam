@@ -1,24 +1,25 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   font-style: normal;
   font-weight: 400;
   src: local("Josefin Sans"), local("Josefin Sans"), url("../fonts/josefin-sans-v16-latin-regular.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-regular.woff") format("woff");
 }
 @font-face {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   font-style: bold;
   font-weight: 600;
   src: local("Josefin Sans"), local("Josefin Sans"), url("../fonts/josefin-sans-v16-latin-600.woff2") format("woff2"), url("../fonts/josefin-sans-v16-latin-600.woff") format("woff");
 }
 @font-face {
-  font-family: "Aleo";
+  font-family: 'Aleo';
   font-style: normal;
   font-weight: 400;
   src: local("Josefin Sans"), local("Aleo"), url("../fonts/aleo-regular-webfont.woff2") format("woff2"), url("../fonts/aleo-regular-webfont.woff2") format("woff");
 }
 * {
-  transition: all 0.1s ease-in;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", "Arial", sans-serif;
+  font-family: 'Josefin Sans', 'Arial', sans-serif;
   font-weight: 400;
   color: #ffffff;
   overflow-x: hidden;
@@ -97,8 +98,9 @@ img {
   margin: 0 auto;
   margin-bottom: 1.25rem;
   padding: 10px 0 10px 10px;
-  box-sizing: border-box;
-  font-family: "Josefin Sans", "Arial", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Josefin Sans', 'Arial', sans-serif;
   font-size: 14px;
   letter-spacing: 0.01em;
   text-align: center;
@@ -113,8 +115,9 @@ img {
   margin: 0 auto;
   margin-bottom: 3.125rem;
   padding: 3px 0 3px 0;
-  box-sizing: border-box;
-  font-family: "Aleo", "Time New Romano", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Aleo', 'Time New Romano', sans-serif;
   font-size: 12px;
   line-height: 26px;
   text-transform: uppercase;
@@ -185,7 +188,7 @@ img {
 }
 .site-list__link {
   padding: 5px 0 5px 0;
-  font-family: "Aleo", "Time New Romano", sans-serif;
+  font-family: 'Aleo', 'Time New Romano', sans-serif;
   font-size: 12px;
   line-height: 26px;
   text-transform: uppercase;
@@ -214,7 +217,7 @@ img {
 .choose__title {
   margin: 0 auto;
   margin-bottom: 2.5rem;
-  font-family: "Aleo", "Time New Romano", sans-serif;
+  font-family: 'Aleo', 'Time New Romano', sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
@@ -223,7 +226,7 @@ img {
 .choose__description {
   margin: 0 auto;
   margin-bottom: 20px;
-  font-family: "Josefin Sans", "Arial", sans-serif;
+  font-family: 'Josefin Sans', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
@@ -240,8 +243,9 @@ img {
   width: 35%;
   margin: 0 auto;
   padding: 3px 0 3px 0;
-  box-sizing: border-box;
-  font-family: "Aleo", "Time New Romano", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Aleo', 'Time New Romano', sans-serif;
   font-size: 10px;
   line-height: 26px;
   text-transform: uppercase;
@@ -277,17 +281,31 @@ img {
   background-color: #333333;
 }
 .advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 1.25rem;
 }
 .advantages__icon {
@@ -384,14 +402,21 @@ img {
 .reviews__title {
   margin: 0;
   margin-bottom: 5.625rem;
-  font-family: "Aleo", "Time New Romano", sans-serif;
+  font-family: 'Aleo', 'Time New Romano', sans-serif;
   font-size: 36px;
   text-align: center;
 }
 .reviews__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 100%;
 }
 .reviews__image {
@@ -402,7 +427,8 @@ img {
   width: 80%;
   margin: 0 auto;
   padding: 3.125rem 1.25rem 2.5rem 2.5rem;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #333333;
 }
 .reviews__card-wrapper br {
@@ -426,7 +452,7 @@ img {
   font-size: 16px;
 }
 .reviews__card-description::before {
-  content: "“";
+  content: '“';
   position: absolute;
   top: 15px;
   left: 0;
@@ -456,10 +482,17 @@ img {
   text-align: center;
 }
 .page-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   width: 175px;
   margin: 0 auto;
   padding: 0;
@@ -547,7 +580,8 @@ img {
     margin: 0 auto;
     margin-bottom: 3.125rem;
     padding: 15px 0 15px 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 0.09em;
@@ -570,8 +604,12 @@ img {
     background-color: #5474fd;
   }
   .page-header__nav-wrapper .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding-top: 10px;
   }
   .page-header__logo {
@@ -587,8 +625,12 @@ img {
   }
 
   .site-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 540px;
     margin: 0;
   }
@@ -610,8 +652,12 @@ img {
   }
 
   .page-main__background-wrapper-one .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .choose {
@@ -656,8 +702,12 @@ img {
   }
 
   .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     padding: 7.5rem 0 7.1875rem 0;
     width: 48%;
   }
@@ -681,7 +731,10 @@ img {
     padding: 5.9375rem 0 5.8125rem 0;
   }
   .advantages__list {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .advantages__item {
     width: 33.3%;
@@ -692,7 +745,7 @@ img {
     margin-bottom: 20px;
   }
   .advantages__text {
-    font-family: "Aleo", "Time New Romano", sans-serif;
+    font-family: 'Aleo', 'Time New Romano', sans-serif;
     font-size: 36px;
     text-transform: none;
   }
@@ -725,7 +778,10 @@ img {
     height: 284px;
   }
   .reviews__card {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .reviews__card-wrapper {
     padding: 3.125rem 1.25rem 2.5rem 3.125rem;
